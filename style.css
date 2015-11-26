@@ -1,0 +1,64 @@
+/*
+Theme Name: North Hills Animal Hospital & Resort
+Theme URI: http://wordpress.org/themes/twentythirteen
+Author: the WordPress team
+Author URI: http://wordpress.org/
+Description: Creation of a design mock up for North Hills Animal Hospital & Resort
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: 
+Text Domain: northhillsanimalhospital
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+body{
+	font-family: "Helvetica",Helvetica,Arial,sans-serif;
+}
+
+.row {
+    position: relative;
+}
+
+.container button{
+	background-color: #5A77A0;
+    padding-left: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 30px;
+    color: white;
+    margin-left: -2px;
+    margin-right: -2px;
+}
+
+
+.contact{
+	    text-align: center;
+    background-color: #40587B;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 7px;
+        border-radius: 5px;
+}
+
+
+.classy {
+	text-align: center;
+    font-family: cursive;
+    color: #40587B;
+    font-size: 20px;
+    position: absolute;
+    bottom:0;
+    right:0;
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+.classy{
+	position:relative;
+}
+
+}

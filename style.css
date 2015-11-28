@@ -14,22 +14,27 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 body{
-	font-family: "Helvetica",Helvetica,Arial,sans-serif;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	background-color: #D6D4D4;
 }
 
 .row {
     position: relative;
 }
 
-.container button{
-	background-color: #5A77A0;
-    padding-left: 30px;
+.container-fluid button{
+    background-color: #7BA0BB;
+    padding-left: 35px;
     padding-top: 5px;
     padding-bottom: 5px;
-    padding-right: 30px;
+    padding-right: 35px;
     color: white;
     margin-left: -2px;
     margin-right: -2px;
+    letter-spacing: 5px;
+    margin-top: 8px;
+    border: solid thin #D6D4D4;
 }
 
 
@@ -53,6 +58,132 @@ body{
     right:0;
 }
 
+.image_carousel img{
+	width:100%;
+	margin-bottom: 25px;
+	  box-shadow: 0px 10px 30px grey;
+}
+
+/*.info_section{
+	margin:auto;
+}*/
+
+.info_section h4 {
+	color: #40587B;
+	text-align: center;
+}
+
+.info_section .pane {
+	    border: solid thin;
+    margin-bottom: 10px;
+    box-shadow: 0px 10px 20px grey;
+}
+
+.pane p {
+	    padding: 7px;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.pane{
+	background-color:white;
+}
+
+.imagefade{
+	background:
+	-webkit-linear-gradient( top, rgba( 255, 255, 255, 0 ) 0%, rgba( 255, 255, 255, 1 ) 90% );
+	position: absolute;
+	/* top: 0px; */
+	/* left: 0px; */
+	width: 250px;
+	height: 100px;
+}
+
+.image_container img {
+	height:100px;
+	width: 210px;
+}
+
+.header_section{
+	background-color: #D6D4D4;
+}
+
+.button_container button {
+	    margin-bottom: -10px;
+	    background-color: #7BA0BB;
+	    color:white;
+	    padding-left: 10px;
+	    padding-right: 10px;
+}
+
+.footer {
+	background-color: #40587B;
+	/* height:180px; */
+	margin-top: 20px;
+	border-top: solid #7BA0BB;
+	border-width: 7px;
+}
+
+.navbar-default {
+	    background-color: #D6D4D4;
+	    border:none;
+}
+
+.footer_links{
+	/* display:inline-block; */
+	margin: 13px;
+}
+
+.footer_links a{
+	color:white;
+	display:block;
+	text-align:center;
+	cursor:pointer;
+	margin: 5px;
+	font-size: 12px;
+}
+
+
+
+.footer_title {
+	 color:#7BA0BB;
+	 /* margin-left: 9%; */
+	 /* margin-top:10px; */
+	 /* margin-bottom: -37px; */
+	 letter-spacing: 5px;
+}
+
+.footer_link_container{
+	border-bottom: dotted thin #7BA0BB;
+    padding: 3px;
+}
+
+@media screen and (max-width: 1130px) {
+
+.imagefade{
+	width:216px;
+}
+
+
+}
+
+
+@media screen and (max-width: 991px) {
+
+.imagefade{
+	width:75%;
+}
+
+.button_container button {
+ 
+
+    margin-bottom: 10px;
+
+}
+
+.pane p {
+	text-align: center;
+}
 
 
 @media screen and (max-width: 600px) {

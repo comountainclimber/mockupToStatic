@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="App">
 <head>
 	<title>North Hills Animal Hospital</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="bootstrap-min.css">
 	<link rel="stylesheet", href="style.css">
 	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="angular145.js"></script>
 </head>
-<body>
-	
+<body ng-controller="mainController">
+	{{greeting}}
 	<div class = "container-fluid">
 		<div class="row">
 			<div class="col-sm-7">
@@ -66,7 +67,10 @@
 				<h4> ABOUT US </h4>
 				<p>Lorem ipsum dolor sit amet, equidem percipit instructior ne eum, te persius constituto eum. Eam simul libris nonumes te, per persius laboramus adipiscing ne, fuisset singulis.</p>
 				<div class="button_container text-center">
-					<button class="btn"> READ MORE </button>
+					<button class="btn"> READ MORE 
+						<div class="arrow-right">
+						</div>
+					</button>
 				</div>
 			</div>
 		</div>
@@ -81,7 +85,10 @@
 				<h4> SERVICES </h4>
 				<p>Lorem ipsum dolor sit amet, equidem percipit instructior ne eum, te persius constituto eum. Eam simul libris nonumes te, per persius laboramus adipiscing ne, fuisset singulis.</p>
 				<div class="button_container text-center">
-					<button class="btn"> READ MORE </button>
+					<button class="btn"> READ MORE 
+						<div class="arrow-right">
+						</div>
+					</button>
 				</div>
 			</div>
 		</div>
@@ -96,7 +103,10 @@
 				<h4> OUR DOCTORS </h4>
 				<p>Lorem ipsum dolor sit amet, equidem percipit instructior ne eum, te persius constituto eum. Eam simul libris nonumes te, per persius laboramus adipiscing ne, fuisset singulis.</p>
 				<div class="button_container text-center">
-					<button class="btn"> READ MORE </button>
+					<button class="btn"> READ MORE 
+						<div class="arrow-right">
+						</div>
+					</button>
 				</div>
 			</div>
 		</div>
@@ -111,7 +121,10 @@
 				<h4> CONTACT US </h4>
 				<p>Lorem ipsum dolor sit amet, equidem percipit instructior ne eum, te persius constituto eum. Eam simul libris nonumes te, per persius laboramus adipiscing ne, fuisset singulis.</p>
 				<div class="button_container text-center">
-					<button class="btn"> READ MORE </button>
+					<button class="btn"> READ MORE 
+						<div class="arrow-right">
+						</div>
+					</button>
 				</div>
 			</div>
 		</div>
@@ -120,12 +133,12 @@
 	<div class="row">
 		<div class = "footer col-lg-12">
 			<div class="row">
-				
 				<div class="footer_link_container text-center">
-					<div class="footer_links col-sm-2">
-						<div class="footer_title">
+					<div class="footer_title col-sm-2">
+					<!-- 	<div class="footer_title">
 						QUICK LINKS:
-						</div>
+						</div> -->
+						QUICK LINKS:
 					</div>
 					<div class="footer_links col-sm-2">
 						<a> Lorem ipsum dolor </a>
@@ -152,10 +165,24 @@
 					</div>
 				</div>
 			</div>
+			<div class="row">
+				<div class="col-sm-2">
+				</div>
+				<div class="col-sm-8 footer_bottom text-center">
+				<a>Home</a>
+				<a>Hours/Location</a>
+				<a>Services</a>
+				<a>Happy Patients</a>
+				<a>History</a>
+				<a>Contact Us</a>
+				</div>
+				<div class="col-sm-2">
+				</div>
+			</div>
 		</div>
 	</div>
 
 	</div>
-
+<script type="text/javascript" src="main.js"></script>
 </body>
 </html>

@@ -13,40 +13,30 @@ Text Domain: northhillsanimalhospital
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
+
+/*-*-*-*-*-*-*-*-*-GENERAL SETTINGS-*-*-*-*-*-*-*-*-**/
 body{
 	font-family: 'Roboto', sans-serif;
 	font-weight: 100;
 	background-color: #D6D4D4;
 }
 
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
 .row {
     position: relative;
 }
 
-.container-fluid button{
-    background-color: #7BA0BB;
-    padding-left: 35px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-right: 35px;
-    color: white;
-    margin-left: -2px;
-    margin-right: -2px;
-    letter-spacing: 5px;
-    margin-top: 8px;
-    border: solid thin #D6D4D4;
-}
-
+/*-*-*-*-*-*--*-*-HEADER AND NAVBAR-*-*-*-*-*-*-*-*-*-*-*-*-*/
 
 .contact{
-	    text-align: center;
+	text-align: center;
     background-color: #40587B;
     color: white;
     font-size: 15px;
     letter-spacing: 7px;
-        border-radius: 5px;
+    border-radius: 5px;
 }
-
 
 .classy {
 	text-align: center;
@@ -58,15 +48,61 @@ body{
     right:0;
 }
 
+.navbar-default {
+    background-color: #D6D4D4;
+    border:none;
+}
+
+/*-*-*-*-*-*--*-*-CAROUSEL (IMAGE-SLIDER)-*-*-*-*-*-*-*-*-*-*-*-*-*/
+.slides_control{
+	margin-bottom: 20px;
+}
+.slides_control img{
+	width: 100%;
+}
+
 .image_carousel img{
 	width:100%;
 	margin-bottom: 25px;
-	  box-shadow: 0px 10px 30px grey;
+	box-shadow: 0px 10px 30px grey;
 }
 
-/*.info_section{
-	margin:auto;
-}*/
+/*-*-*-*-*-*--*-*-BUTTONS-*-*-*-*-*-*-*-*-*-*-*-*-*/
+.arrow-right{
+    width: 0px;
+    height: 0px;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+}
+
+.container-fluid button{
+    background-color: #7BA0BB;
+    padding-left: 31px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 31px;
+    color: white;
+    margin-left: -2px;
+    margin-right: -2px;
+    letter-spacing: 5px;
+    margin-top: 8px;
+    border: solid thin #D6D4D4;
+}
+
+.button_container button {
+    margin-bottom: -10px;
+    background-color: #7BA0BB;
+    color:white;
+    padding-left: 15px;
+    padding-right: 15px;
+    letter-spacing: 3px;
+    box-shadow: 0px 1px 5px grey;
+}
+/*-*-*-*-*-*--*-*-INFO PANES-*-*-*-*-*-*-*-*-*-*-*-*-*/
 
 .info_section h4 {
 	color: #40587B;
@@ -74,13 +110,13 @@ body{
 }
 
 .info_section .pane {
-	    border: solid thin;
+	border: solid thin;
     margin-bottom: 10px;
     box-shadow: 0px 10px 20px grey;
 }
 
 .pane p {
-	    padding: 7px;
+	padding: 7px;
     font-size: 12px;
     margin-left: 10px;
 }
@@ -93,8 +129,6 @@ body{
 	background:
 	-webkit-linear-gradient( top, rgba( 255, 255, 255, 0 ) 0%, rgba( 255, 255, 255, 1 ) 90% );
 	position: absolute;
-	/* top: 0px; */
-	/* left: 0px; */
 	width: 250px;
 	height: 100px;
 }
@@ -104,17 +138,16 @@ body{
 	width: 210px;
 }
 
-.header_section{
-	background-color: #D6D4D4;
+.proud_banner {
+	background-color:white;
+	color: #7BA0BB;
+	letter-spacing:4px;
+	margin-top:20px;
+	padding: 15px;
+	box-shadow: 0px 1px 5px grey;
 }
 
-.button_container button {
-	    margin-bottom: -10px;
-	    background-color: #7BA0BB;
-	    color:white;
-	    padding-left: 10px;
-	    padding-right: 10px;
-}
+/*-*-*-*-*-*--*-*-FOOTER-*-*-*-*-*-*-*-*-*-*-*-*-*/
 
 .footer {
 	background-color: #40587B;
@@ -122,17 +155,12 @@ body{
 	margin-top: 20px;
 	border-top: solid #7BA0BB;
 	border-width: 7px;
-}
-
-.navbar-default {
-	    background-color: #D6D4D4;
-	    border:none;
+	padding-top: 10px;
 }
 
 .footer_links{
-	/* display:inline-block; */
-	/* margin: 13px; */
 	margin-top: 10px;
+	margin-bottom: 25px;
 }
 
 .footer_links a{
@@ -140,83 +168,70 @@ body{
 	display:block;
 	text-align:center;
 	cursor:pointer;
-	/* margin: 5px; */
-	MARGIN-BOTTOM: 10px;
-	font-size: 12px;
-	/* margin-top: 10px; */
+	margin-bottom: 10px;
+	font-size: 9px;
 }
 
-
 .footer_bottom{
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 	border-top: dotted thin #7BA0BB;
+	text-align: left;
 }
 
 .footer_bottom a{
 	color:white;
 	cursor:pointer;
 	margin: 5px;
-	font-size: 12px;
+	font-size: 10px;
+	opacity: .8;
 	
 }
 
-
-
 .footer_title {
 	 color:#7BA0BB;
-	 /* margin-left: 9%; */
-	 /* margin-top: 17px; */
-	 /* margin-bottom: -37px; */
 	 letter-spacing: 5px;
 	 margin-top: 10px;
 }
 
 .footer_link_container{
-	border-bottom: dotted thin #7BA0BB;
-    padding: 3px;
+	border-top: dotted thin #7BA0BB;
 }
 
-.arrow-right{
-     width: 0px;
-    height: 0px;
-    border-top: 5px solid transparent;
-    border-bottom: 5px solid transparent;
-    border-left: 5px solid;
-    /* margin-left: 733px; */
-    /* margin-top: 60px; */
-    cursor: pointer;
-    position: relative;
-    /* margin-bottom: -30px; */
-    display: inline-block;
+.design_by {
+	text-align: right;
 }
 
-@media screen and (max-width: 1130px) {
+.design_by a{
+	font-size:8px;
+	    margin: 0px;
+}
 
+.design_by p{
+	color:white;
+	display:inline-block;
+	opacity:.4;
+	font-size:8px;
+	position: relative;
+}
+
+@media screen and (max-width: 1200px) {
 .imagefade{
-	width:216px;
+	width:210px;
 }
-
-
 }
-
 
 @media screen and (max-width: 991px) {
-
 .imagefade{
 	width:75%;
 }
 
 .button_container button {
- 
-
     margin-bottom: 10px;
-
 }
 
 .pane p {
 	text-align: center;
 }
-
 
 @media screen and (max-width: 600px) {
 
@@ -224,4 +239,7 @@ body{
 	position:relative;
 }
 
+.slides_control{
+	display:none;
+}
 }

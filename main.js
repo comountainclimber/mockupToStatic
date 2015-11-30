@@ -1,7 +1,3 @@
-// angular.module('App', []);
-
-// angular.module('App')
-
 angular.module('App', ['ui.bootstrap'])
 	.controller('mainController', ['$scope', function($scope){
 
@@ -29,18 +25,4 @@ angular.module('App', ['ui.bootstrap'])
 		      image: 'mockup/sliderImages/6.jpg'
 		    }
 		]
-
-
-
-
-
-
-		// $scope.myInterval = 5000;
-  // 		$scope.noWrapSlides = false;
-  // 		var slides = $scope.slides = ['/mockup/sliderImages/1.jpg', '/mockup/sliderImages/2.jpg','/mockup/sliderImages/3.jpg','/mockup/sliderImages/4.jpg','/mockup/sliderImages/5.jpg','/mockup/sliderImages/6.jpg',];
-
-
-
-
-
-		}])
+}])
